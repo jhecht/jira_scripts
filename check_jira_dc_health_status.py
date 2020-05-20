@@ -14,14 +14,7 @@ def get_args():
     parser = argparse.ArgumentParser(description='Retrieves the statuses of various health check attributes for Jira', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-u', '--url',
                         help='Jira Base URL',
-                        default='https://jira
-                        
-                        
-                        
-                        
-                        
-                        
-                        ')
+                        default='https://jira')
     args = parser.parse_args()
     return args
 
