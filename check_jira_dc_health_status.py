@@ -2,7 +2,7 @@
 # Checks the statuses of various health check attributes for Jira
 # For Atlassian Docs see https://confluence.atlassian.com/jirakb/how-to-retrieve-health-check-results-using-rest-api-867195158.html
 # Example Usage (must be run as 'nagios' user):
-# ./check_jira_health_status -u https://jira.savagebeast.com
+# ./check_jira_health_status -u https://jira/
 
 import argparse
 import json
@@ -14,7 +14,14 @@ def get_args():
     parser = argparse.ArgumentParser(description='Retrieves the statuses of various health check attributes for Jira', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-u', '--url',
                         help='Jira Base URL',
-                        default='https://jira.savagebeast.com')
+                        default='https://jira
+                        
+                        
+                        
+                        
+                        
+                        
+                        ')
     args = parser.parse_args()
     return args
 
